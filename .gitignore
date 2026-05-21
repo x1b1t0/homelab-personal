@@ -10,3 +10,5 @@ wireguard/config/*
 
 # Excepciones
 !wireguard/config/.gitkeep
+
+push.sh
