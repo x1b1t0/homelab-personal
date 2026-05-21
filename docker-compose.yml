@@ -67,3 +67,17 @@ services:
     ports:
       - "51820:51820/udp"
     restart: always
+  fail2ban:
+    image: crazymax/fail2ban:latest
+    container_name: fail2ban
+    restart: always
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    volumes:
+      - ./fail2ban/data:/data
+      - /var/log:/var/log:ro
+    environment:
+      - TZ=Europe/Madrid
+      - F2B_LOG_LEVEL=INFO
