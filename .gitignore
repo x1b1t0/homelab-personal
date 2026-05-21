@@ -12,3 +12,8 @@ wireguard/config/*
 !wireguard/config/.gitkeep
 
 push.sh
+
+!fail2ban/
+!fail2ban/data/
+!fail2ban/data/jail.d/
+!fail2ban/data/jail.d/*.conf
