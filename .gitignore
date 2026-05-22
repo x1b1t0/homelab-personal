@@ -17,3 +17,4 @@ push.sh
 !fail2ban/data/
 !fail2ban/data/jail.d/
 !fail2ban/data/jail.d/*.conf
+venv/
