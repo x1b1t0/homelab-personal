@@ -1,0 +1,4 @@
+#!/bin/bash
+cd ~/mi-homelab/scripts
+source venv/bin/activate
+python kuma_status.py
